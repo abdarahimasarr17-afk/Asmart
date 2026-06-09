@@ -193,10 +193,20 @@ a {
 }
 
 .logo-img {
-    height: 40px;
+    height: 48px;
     width: auto;
     object-fit: contain;
-    background: transparent;
+    background-color: var(--bg-white);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-premium);
+    transition: var(--transition-fast);
+    display: block;
+}
+
+.navbar.scrolled .logo-img {
+    height: 40px;
+    padding: 4px 10px;
 }
 
 .nav-menu {
@@ -1802,9 +1812,15 @@ textarea.form-control {
 }
 
 .footer-logo-img {
-    height: 50px;
+    height: 60px;
     width: auto;
     object-fit: contain;
+    background-color: var(--bg-white);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-premium);
+    display: block;
+    align-self: flex-start;
 }
 
 .footer-description {
