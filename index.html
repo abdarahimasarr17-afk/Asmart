@@ -3,58 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASMART Consulting & Formation | Marchés Publics & BTP</title>
+    <title>ASMART Consulting | Accompagnement Marchés Publics & Appels d'Offres</title>
     
-    <!-- Meta SEO -->
-    <meta name="description" content="ASMART Consulting & Formation accompagne les TPE et PME, notamment dans le secteur BTP, dans leur développement commercial et l'accès aux marchés publics. Fondé par Asmae Azib.">
-    <meta name="keywords" content="ASMART, Consulting, Formation, Marchés Publics, BTP, TPE, PME, développement commercial, Asmae Azib">
-    <meta name="author" content="ASMART Consulting & Formation">
+    <!-- SEO Tags -->
+    <meta name="description" content="Cabinet de conseil premium spécialisé dans l'accompagnement des TPE/PME du BTP, de la sécurité privée et du nettoyage pour remporter des marchés publics. Optimisation du mémoire technique.">
+    <meta name="keywords" content="accompagnement marchés publics, réponse appel d'offres BTP, consultant marchés publics bâtiment, rédaction mémoire technique BTP, marchés publics sécurité privée, consultant appel d'offre PME">
+    <meta name="author" content="ASMART Consulting">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Social Media SEO -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ASMART Consulting & Formation | Accompagnement Marchés Publics & BTP">
-    <meta property="og:description" content="Développez votre activité et accédez sereinement aux marchés publics. Un accompagnement sur-mesure pour les TPE & PME du BTP.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
+    <meta property="og:title" content="ASMART Consulting | Accompagnement Appels d'Offres & Marchés Publics">
+    <meta property="og:description" content="Nous construisons vos victoires sur les marchés publics. Conseil stratégique pour TPE/PME du BTP, de la sécurité et du nettoyage.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="ASMART Consulting & Formation">
-    <meta property="twitter:description" content="Développez votre activité et accédez sereinement aux marchés publics.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
+    <!-- Icons & Styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CSS Textured Overlay -->
+    <!-- CSS Textured Noise Overlay -->
     <div class="noise-overlay"></div>
 
-    <!-- --- NAVBAR --- -->
+    <!-- --- FLOATING NAVBAR (SHARED) --- -->
     <header class="navbar" id="navbar">
         <div class="container">
-            <a href="#hero" class="logo">
-                <img src="logo.png" alt="ASMART Logo" class="logo-img">
+            <a href="#accueil" class="logo">
+                <span class="logo-text">ASMART<span>.</span></span>
             </a>
             
             <nav>
                 <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item active"><a href="#hero">Accueil</a></li>
-                    <li class="nav-item"><a href="#about">Qui Sommes-Nous</a></li>
-                    <li class="nav-item"><a href="#services">Nos Services</a></li>
-                    <li class="nav-item"><a href="#why-us">Pourquoi Nous Choisir</a></li>
+                    <li class="nav-item active"><a href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a href="#methode">Notre méthode</a></li>
+                    <li class="nav-item"><a href="#secteurs">Secteurs</a></li>
+                    <li class="nav-item"><a href="#tarifs">Offres & Tarifs</a></li>
+                    <li class="nav-item"><a href="#a-propos">À propos</a></li>
+                    <li class="nav-item"><a href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a href="#blog">Ressources</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
-                    <li class="nav-item"><a href="#contact" class="btn btn-primary btn-nav">Prendre RDV</a></li>
                 </ul>
             </nav>
+
+            <a href="#contact" class="btn btn-primary btn-nav">Analyser mes opportunités</a>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
                 <span></span>
@@ -64,265 +55,1278 @@
         </div>
     </header>
 
-    <!-- --- HERO SECTION --- -->
-    <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <span class="hero-pretitle">Votre Partenaire Croissance & Marchés Publics</span>
-            <h1 class="hero-title">Accédez aux <span>marchés publics</span>.<br>Développez votre activité.</h1>
-            <p class="hero-description">
-                ASMART Consulting & Formation accompagne les TPE et PME (notamment dans le secteur du BTP) pour structurer leur développement commercial et remporter des appels d'offres.
-            </p>
-            <div class="hero-ctas">
-                <a href="#contact" class="btn btn-primary">Prendre Contact</a>
-                <a href="#services" class="btn btn-white-outline">Découvrir nos offres</a>
+
+    <!-- ========================================== -->
+    <!-- 1. VIEW: ACCUEIL (HOME)                    -->
+    <!-- ========================================== -->
+    <div id="view-accueil" class="page-view active">
+        <!-- Hero Section -->
+        <section class="hero" id="hero-accueil">
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag"><i class="fa-solid fa-circle-check"></i> Cabinet Conseil Marchés Publics</span>
+                    <h1 class="hero-title">Vous construisez votre expertise.<br>Nous construisons vos <span>victoires</span> sur les marchés publics.</h1>
+                    <p class="hero-description">
+                        ASMART Consulting accompagne les entreprises du BTP, de la sécurité et du nettoyage dans leurs réponses aux appels d'offres publics.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Analyser mes opportunités <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#tarifs" class="btn btn-white-outline">Découvrir les tarifs</a>
+                    </div>
+                    <div class="hero-trust-indicators">
+                        <div class="trust-item"><i class="fa-solid fa-check"></i> Dossier complet pris en charge</div>
+                        <div class="trust-item"><i class="fa-solid fa-check"></i> Mémoire technique optimisé</div>
+                        <div class="trust-item"><i class="fa-solid fa-check"></i> Exclusivité métier & zone</div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Bâtiment d'architecture moderne représentant le développement d'ASMART" class="hero-image">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- --- QUI SOMMES-NOUS --- -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content animate-on-scroll">
-                    <span class="section-tag">Qui sommes-nous</span>
-                    <h2 class="section-title" style="text-align: left; margin-left: 0; padding-bottom: 12px; margin-bottom: 25px;">
-                        Un partenaire de confiance à vos côtés
-                    </h2>
-                    <div class="about-text">
-                        <p>
-                            Fondée par <strong>Asmae Azib</strong>, ASMART Consulting & Formation est née d'une ambition forte : rendre l'accès aux marchés publics et le développement commercial simples, structurés et accessibles pour toutes les TPE et PME, avec une spécialisation marquée pour les métiers du Bâtiment et des Travaux Publics (BTP).
-                        </p>
-                        <p>
-                            Nous croyons fermement que la réussite d'une entreprise repose sur des méthodes concrètes et adaptées. C'est pourquoi nous nous positionnons comme un véritable partenaire opérationnel, doté d'une double casquette de conseil stratégique et de formateur terrain.
-                        </p>
+        <!-- Exclusivity Block -->
+        <section class="exclusivity-block">
+            <div class="container">
+                <div class="exclusivity-content">
+                    <div class="exclusivity-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h2 class="exclusivity-title">Notre charte d'exclusivité territoriale</h2>
+                    <p class="exclusivity-text">
+                        "ASMART limite volontairement ses accompagnements. Nous ne travaillons pas avec plusieurs concurrents directs sur une même zone. Quand votre développement devient notre mission, nous ne renforçons pas vos concurrents."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="problem-grid">
+                    <div class="problem-visual">
+                        <div class="problem-stat">70%</div>
+                        <div class="problem-stat-desc">des TPE/PME sont rejetées pour des critères de forme ou des mémoires techniques non conformes.</div>
                     </div>
-                    
-                    <div class="about-meta">
-                        "Notre mission est de démystifier la commande publique et de vous donner les clés méthodologiques et commerciales pour remporter vos prochains chantiers."
+                    <div class="problem-content">
+                        <span class="section-tag">Le Constat commercial</span>
+                        <h2 class="section-title">Vous perdez des marchés avant même d'y répondre.</h2>
+                        <p class="problem-text">
+                            Chaque semaine, des opportunités stratégiques existent pour votre entreprise. Mais y répondre avec succès exige une rigueur administrative lourde, une veille rigoureuse et une stratégie d'écriture de mémoire technique pointue.
+                        </p>
+                        <p class="problem-text" style="margin-bottom: 2.5rem; font-weight: 500;">
+                            Vous n'avez pas le temps de gérer ces formalités ? Vos équipes sont saturées ? ASMART prend le relais de A à Z.
+                        </p>
+                        <ul class="problem-list">
+                            <li><i class="fa-solid fa-circle-xmark"></i> Rejets administratifs frustrants dus à un mauvais formalisme</li>
+                            <li><i class="fa-solid fa-circle-xmark"></i> Mémoire technique générique qui ne marque pas l'acheteur public</li>
+                            <li><i class="fa-solid fa-circle-xmark"></i> Manque de temps pour effectuer une veille efficace des marchés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section (Teaser) -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Notre approche opérationnelle</span>
+                    <h2 class="section-title">Une méthode rigoureuse en 4 étapes</h2>
+                    <p class="section-subtitle">Découvrez notre processus éprouvé pour transformer chaque appel d'offres en un succès commercial pérenne.</p>
+                </div>
+                
+                <div class="method-grid">
+                    <div class="method-card">
+                        <div class="method-num">01</div>
+                        <div class="method-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3 class="method-title">Identification</h3>
+                        <p class="method-desc">Recherche rigoureuse et ciblée des marchés publics qui correspondent parfaitement à votre zone et votre activité.</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-num">02</div>
+                        <div class="method-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="method-title">Analyse</h3>
+                        <p class="method-desc">Lecture minutieuse du DCE (Dossier de Consultation), décryptage des critères acheteurs et définition de la stratégie.</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-num">03</div>
+                        <div class="method-icon"><i class="fa-solid fa-file-pen"></i></div>
+                        <h3 class="method-title">Construction</h3>
+                        <p class="method-desc">Rédaction complète et sur-mesure de votre mémoire technique et montage de l'ensemble du dossier administratif.</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-num">04</div>
+                        <div class="method-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3 class="method-title">Dépôt</h3>
+                        <p class="method-desc">Transmission technique sécurisée et signature sur les plateformes de dématérialisation requises par l'acheteur.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="#methode" class="btn btn-outline">Explorer notre méthodologie détaillée</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secteurs Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" style="color: var(--accent);">Expertise métier</span>
+                    <h2 class="section-title">Des solutions ciblées par secteur</h2>
+                    <p class="section-subtitle">Chaque secteur a ses propres contraintes de notation. Nous adaptons notre stratégie à votre cœur de métier.</p>
+                </div>
+
+                <div class="sectors-grid">
+                    <a href="#secteurs?tab=btp" class="sector-card">
+                        <div class="sector-card-bg" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80')"></div>
+                        <div class="sector-card-overlay"></div>
+                        <div class="sector-card-content">
+                            <div class="sector-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                            <h3 class="sector-title">BTP & Travaux</h3>
+                            <p class="sector-desc">Optimisation des mémoires pour les chantiers publics, gestions RSE, SOPAQ et PPSPS.</p>
+                            <span class="sector-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="#secteurs?tab=securite" class="sector-card">
+                        <div class="sector-card-bg" style="background-image: url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&q=80')"></div>
+                        <div class="sector-card-overlay"></div>
+                        <div class="sector-card-content">
+                            <div class="sector-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3 class="sector-title">Sécurité Privée</h3>
+                            <p class="sector-desc">Accréditations CNAPS, gestion des astreintes, planification et réactivité opérationnelle.</p>
+                            <span class="sector-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="#secteurs?tab=nettoyage" class="sector-card">
+                        <div class="sector-card-bg" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80')"></div>
+                        <div class="sector-card-overlay"></div>
+                        <div class="sector-card-content">
+                            <div class="sector-icon"><i class="fa-solid fa-broom"></i></div>
+                            <h3 class="sector-title">Nettoyage Professionnel</h3>
+                            <p class="sector-desc">Critères éco-responsables, fiches de postes détaillées et gestion des protocoles sanitaires.</p>
+                            <span class="sector-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="#secteurs?tab=sur-mesure" class="sector-card">
+                        <div class="sector-card-bg" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80')"></div>
+                        <div class="sector-card-overlay"></div>
+                        <div class="sector-card-content">
+                            <div class="sector-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <h3 class="sector-title">Accompagnement Sur-Mesure</h3>
+                            <p class="sector-desc">Solutions adaptées pour les groupements d'entreprises ou les métiers de services spécifiques.</p>
+                            <span class="sector-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarifs Section -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Une tarification claire et transparente</span>
+                    <h2 class="section-title">Nos offres d'accompagnement</h2>
+                    <p class="section-subtitle">Choisissez le niveau de support adapté aux ambitions de développement commercial de votre entreprise.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Essentiel</h3>
+                        <p class="pricing-desc">Pour valider l'adéquation administrative et sécuriser votre accès.</p>
+                        <div class="pricing-price">890€<span>/ dossier</span></div>
+                        <div class="pricing-price-sub">Idéal pour démarrer</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Veille et sélection du marché</li>
+                            <li><i class="fa-solid fa-check"></i> Lecture critique complète du DCE</li>
+                            <li><i class="fa-solid fa-check"></i> Montage du dossier administratif</li>
+                            <li><i class="fa-solid fa-check"></i> Vérification des pièces justificatives</li>
+                        </ul>
+                        <a href="#contact?offre=essentiel" class="btn btn-outline">Choisir l'offre Essentiel</a>
                     </div>
 
-                    <div class="about-values">
-                        <div class="value-item">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <div>
-                                <h4 class="value-item-title">Pédagogie</h4>
-                                <p class="value-item-desc">Transmettre des compétences claires et durables à vos équipes.</p>
+                    <div class="pricing-card featured">
+                        <span class="pricing-badge">Le plus choisi</span>
+                        <h3 class="pricing-title">Complet</h3>
+                        <p class="pricing-desc">L'accompagnement haut de gamme pour maximiser votre note technique.</p>
+                        <div class="pricing-price">2490€<span>/ dossier</span></div>
+                        <div class="pricing-price-sub">Optimisation complète de la note</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Inclut l'offre <strong>Essentiel</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Rédaction du <strong>mémoire technique sur-mesure</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Stratégie de notation et RSE</li>
+                            <li><i class="fa-solid fa-check"></i> Dépôt sécurisé sur plateforme</li>
+                            <li><i class="fa-solid fa-check"></i> Assistance post-dépôt</li>
+                        </ul>
+                        <a href="#contact?offre=complet" class="btn btn-primary">Choisir l'offre Complet</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Partenaire Exclusif</h3>
+                        <p class="pricing-desc">Votre cabinet marchés publics externalisé avec garantie d'exclusivité.</p>
+                        <div class="pricing-price">1490€<span>/ mois</span></div>
+                        <div class="pricing-price-sub">Engagement de 6 mois minimum</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Veille permanente active</li>
+                            <li><i class="fa-solid fa-check"></i> Réponses illimitées (selon planning)</li>
+                            <li><i class="fa-solid fa-check"></i> Exclusivité géographique & métier</li>
+                            <li><i class="fa-solid fa-check"></i> Support prioritaire par notre équipe</li>
+                        </ul>
+                        <a href="#contact?offre=partenaire-exclusif" class="btn btn-outline">Devenir Partenaire</a>
+                    </div>
+                </div>
+
+                <!-- Offre Fondateur Highlight Box -->
+                <div class="founder-box">
+                    <div class="founder-box-grid">
+                        <div>
+                            <span class="founder-tag">Opportunité exclusive 2026</span>
+                            <h3>L'Offre Fondateur</h3>
+                            <p class="founder-desc">
+                                Pour les 5 premiers partenaires sélectionnés dans chaque région, profitez d'un tarif préférentiel à vie et d'un accompagnement prioritaire direct avec la fondatrice.
+                            </p>
+                            <p style="color: rgba(248, 246, 241, 0.75); font-size: 0.95rem;">
+                                ✓ Engagement réduit / ✓ Bilan initial stratégique offert / ✓ Relation directe
+                            </p>
+                        </div>
+                        <div class="founder-price-area">
+                            <div class="founder-price">990€<span>/ mois</span></div>
+                            <div class="founder-price-note">Tarif préférentiel à vie pour les pionniers</div>
+                            <a href="#contact?offre=fondateur" class="btn btn-primary">Postuler à l'offre Fondateur <i class="fa-solid fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Des résultats mesurables</span>
+                    <h2 class="section-title">Pourquoi les PME nous font confiance</h2>
+                    <p class="section-subtitle">Des statistiques solides et des exemples de marchés publics remportés par nos clients.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-num">84%</div>
+                        <div class="stat-label">Taux de réussite</div>
+                        <div class="stat-sub">Sur les dossiers optimisés complets</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">120M€</div>
+                        <div class="stat-label">Volume de marchés gagnés</div>
+                        <div class="stat-sub">Cumulé par nos clients partenaires</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">450+</div>
+                        <div class="stat-label">Candidatures rédigées</div>
+                        <div class="stat-sub">Avec zéro rejet de forme</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">Confidentialité garantie</div>
+                        <div class="stat-sub">Zéro travail avec des concurrents directs</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.8rem; text-align: center; margin-bottom: 3rem;">Exemples récents de marchés remportés</h3>
+                
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="example-tag-bar">
+                            <span>BTP / Travaux</span>
+                            <span>Île-de-France</span>
+                        </div>
+                        <div class="example-body">
+                            <h4 class="example-title">Rénovation d'un groupe scolaire</h4>
+                            <p class="example-desc" style="color: var(--text-muted); font-size: 0.9rem;">
+                                Optimisation complète du mémoire technique avec focus fort RSE / Valorisation des circuits d'approvisionnement courts.
+                            </p>
+                            <div class="example-stat-box">
+                                <div>
+                                    <div class="example-stat-label">Montant du marché</div>
+                                    <div class="example-stat-val">1.2 M€</div>
+                                </div>
+                                <div>
+                                    <div class="example-stat-label">Note technique obtenue</div>
+                                    <div class="example-stat-val">58 / 60</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="value-item">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                            <div>
-                                <h4 class="value-item-title">Pragmatisme</h4>
-                                <p class="value-item-desc">Des solutions orientées terrain, immédiatement opérationnelles.</p>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-tag-bar">
+                            <span>Sécurité Privée</span>
+                            <span>Auvergne-Rhône-Alpes</span>
+                        </div>
+                        <div class="example-body">
+                            <h4 class="example-title">Surveillance de sites culturels publics</h4>
+                            <p class="example-desc" style="color: var(--text-muted); font-size: 0.9rem;">
+                                Mise en valeur du protocole d'astreinte, de la formation des agents aux premiers secours et de la réactivité 24/7.
+                            </p>
+                            <div class="example-stat-box">
+                                <div>
+                                    <div class="example-stat-label">Montant du marché</div>
+                                    <div class="example-stat-val">680 k€ / an</div>
+                                </div>
+                                <div>
+                                    <div class="example-stat-label">Note technique obtenue</div>
+                                    <div class="example-stat-val">47 / 50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card">
+                        <div class="example-tag-bar">
+                            <span>Nettoyage Pro</span>
+                            <span>Provence-Alpes-Côte d'Azur</span>
+                        </div>
+                        <div class="example-body">
+                            <h4 class="example-title">Entretien de locaux administratifs</h4>
+                            <p class="example-desc" style="color: var(--text-muted); font-size: 0.9rem;">
+                                Structuration de l'offre technique axée sur les produits éco-responsables certifiés et la gestion de la pénibilité.
+                            </p>
+                            <div class="example-stat-box">
+                                <div>
+                                    <div class="example-stat-label">Montant du marché</div>
+                                    <div class="example-stat-val">340 k€</div>
+                                </div>
+                                <div>
+                                    <div class="example-stat-label">Note technique obtenue</div>
+                                    <div class="example-stat-val">38 / 40</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Teaser -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Des réponses à vos interrogations</span>
+                    <h2 class="section-title">Foire aux questions</h2>
+                    <p class="section-subtitle">Les interrogations fréquentes des dirigeants d'entreprises sur l'accès aux appels d'offres publics.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quels documents administratifs sont obligatoires pour répondre ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Généralement, l'acheteur public exige la complétude du dossier de candidature avec le DUME (Document Unique de Marché Européen) ou les formulaires DC1 et DC2. S'y ajoutent vos attestations fiscales, sociales (URSSAF), vos assurances professionnelles et vos attestations de régularité fiscale.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Pourquoi mon entreprise est-elle rejetée malgré un prix compétitif ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Sur la plupart des marchés, l'acheteur public attribue le marché en se fondant sur une pondération. La note technique (évaluant votre mémoire technique) représente souvent 60% de la note globale, et le prix seulement 40%. Si votre mémoire technique est faible ou générique, même avec le prix le plus bas, vous ne serez pas retenu.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Que faites-vous concrètement pour garantir l'exclusivité ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Lorsque vous souscrivez à notre offre Complète ou Partenaire, nous signons une clause contractuelle d'exclusivité sur votre secteur d'activité géographique. Nous refusons systématiquement d'accompagner une entreprise concurrente directe sur les mêmes marchés publics locaux afin de maximiser uniquement vos chances de réussite.
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-image-wrapper animate-on-scroll delay-2">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Réunion de travail professionnelle chez ASMART" class="about-image">
+                <div style="text-align: center; margin-top: 3.5rem;">
+                    <a href="#faq" class="btn btn-outline">Consulter la FAQ complète</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- --- SERVICES --- -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Nos Solutions</span>
-                <h2 class="section-title">Nos Services d'Accompagnement</h2>
-                <p class="section-subtitle">Découvrez nos deux expertises complémentaires conçues spécifiquement pour structurer et propulser votre croissance commerciale.</p>
+
+    <!-- ========================================== -->
+    <!-- 2. VIEW: NOTRE METHODE                     -->
+    <!-- ========================================== -->
+    <div id="view-methode" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-gears"></i> Rigueur & Efficacité</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Notre méthode de <span>conquête</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Répondre aux marchés publics ne s'improvise pas. Nous appliquons un processus d'ingénierie commerciale structuré pour maximiser vos notes techniques.
+                </p>
             </div>
+        </section>
 
-            <div class="services-grid">
-                <!-- Card 1: Formation -->
-                <div class="service-card animate-on-scroll">
-                    <div class="service-image-container">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Session de formation et workshop interactif" class="service-image">
-                        <div class="service-overlay"></div>
-                        <div class="service-icon-badge">
-                            <i class="fa-solid fa-book-open"></i>
-                        </div>
+        <!-- Method Steps -->
+        <section class="section section-white">
+            <div class="container">
+                <!-- Etape 1 -->
+                <div class="problem-grid" style="margin-bottom: 8rem; align-items: center;">
+                    <div class="problem-visual">
+                        <div class="problem-stat">01</div>
+                        <div class="problem-stat-desc" style="color: var(--accent);">IDENTIFICATION & VEILLE ACTIVE</div>
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Formation</h3>
-                        <p class="service-description">
-                            Montez en compétences pour maîtriser les processus de réponse et gagner en autonomie commerciale. Nos formations sont conçues de manière pédagogique et concrète, avec des exercices pratiques adaptés à votre réalité professionnelle.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-circle-check"></i> Comprendre les rouages des marchés publics</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Rédiger un mémoire technique percutant et différenciant</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Structurer sa prospection et ses outils de vente</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Organiser une veille stratégique des appels d'offres</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Se former avec nous</a>
-                    </div>
-                </div>
-
-                <!-- Card 2: Consulting -->
-                <div class="service-card animate-on-scroll delay-2">
-                    <div class="service-image-container">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Consulting stratégique et révision de documents" class="service-image">
-                        <div class="service-overlay"></div>
-                        <div class="service-icon-badge">
-                            <i class="fa-solid fa-handshake-angle"></i>
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Consulting</h3>
-                        <p class="service-description">
-                            Bénéficiez d'un accompagnement sur-mesure clé en main pour structurer votre stratégie et maximiser vos chances de sélection. Nous travaillons en étroite collaboration avec vous pour optimiser chaque réponse.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fa-solid fa-circle-check"></i> Audit et diagnostic de vos candidatures passées</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Aide à la rédaction et au montage des dossiers d'offres</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Élaboration de votre stratégie commerciale et ciblage BTP</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Optimisation des mémoires techniques de A à Z</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Obtenir un conseil</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- --- POURQUOI NOUS CHOISIR --- -->
-    <section class="why-us" id="why-us">
-        <div class="container">
-            <div class="why-us-grid">
-                <div class="why-us-cards animate-on-scroll">
-                    <span class="section-tag">Pourquoi ASMART ?</span>
-                    <h2 class="section-title" style="text-align: left; margin-left: 0; padding-bottom: 12px; margin-bottom: 25px;">
-                        Les clés de votre réussite
-                    </h2>
-                    
-                    <!-- Argument 1 -->
-                    <div class="why-card">
-                        <div class="why-icon-wrapper">
-                            <i class="fa-solid fa-helmet-safety"></i>
-                        </div>
-                        <div class="why-card-content">
-                            <h3>Spécialisation BTP & Marchés Publics</h3>
-                            <p>Nous comprenons parfaitement les contraintes techniques, réglementaires et temporelles des PME du bâtiment, pour un accompagnement ciblé et efficace.</p>
-                        </div>
-                    </div>
-
-                    <!-- Argument 2 -->
-                    <div class="why-card">
-                        <div class="why-icon-wrapper">
-                            <i class="fa-solid fa-route"></i>
-                        </div>
-                        <div class="why-card-content">
-                            <h3>Accompagnement Pragmatique & Pédagogique</h3>
-                            <p>Pas de grands concepts théoriques, mais des méthodes, des livrables et des outils directement exploitables par vos équipes dès le lendemain.</p>
-                        </div>
-                    </div>
-
-                    <!-- Argument 3 -->
-                    <div class="why-card">
-                        <div class="why-icon-wrapper">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <div class="why-card-content">
-                            <h3>Orientation Résultats</h3>
-                            <p>Toutes nos actions ont pour unique objectif de maximiser vos taux de réussite aux appels d'offres et de booster la rentabilité de votre entreprise.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="why-image-wrapper animate-on-scroll delay-3">
-                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80" alt="Casques de sécurité, outils et plans de construction BTP" class="why-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- --- CONTACT --- -->
-    <section class="contact" id="contact">
-        <div class="contact-overlay"></div>
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info animate-on-scroll">
                     <div>
-                        <span class="section-tag" style="color: var(--accent);">Contactez-nous</span>
-                        <h2 class="contact-info-title">Discutons de vos projets de croissance</h2>
-                        <p class="contact-info-text">
-                            Une question sur nos formations ? Besoin d'un accompagnement personnalisé sur un appel d'offres en cours ? Remplissez le formulaire et nous vous répondrons sous 24h.
+                        <span class="section-tag">Étape 01</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-left: 0;">Recherche ciblée & qualification des dossiers</h2>
+                        <p class="problem-text">
+                            Nous mettons en place des algorithmes de veille personnalisés connectés aux principales plateformes de marchés publics (BOAMP, JOUE, plateformes régionales et profils acheteurs).
                         </p>
-                    </div>
-
-                    <div class="contact-details">
-                        <!-- Email -->
-                        <div class="contact-detail-item">
-                            <div class="contact-detail-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h4>Email</h4>
-                                <p><a href="mailto:contact@asmart-consulting.fr">contact@asmart-consulting.fr</a></p>
-                            </div>
-                        </div>
-
-                        <!-- Téléphone -->
-                        <div class="contact-detail-item">
-                            <div class="contact-detail-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h4>Téléphone</h4>
-                                <p><a href="tel:+33600000000">+33 (0)6 00 00 00 00</a></p>
-                            </div>
-                        </div>
-
-                        <!-- Localisation -->
-                        <div class="contact-detail-item">
-                            <div class="contact-detail-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h4>Adresse</h4>
-                                <p>Paris et Île-de-France (Interventions France entière)</p>
-                            </div>
-                        </div>
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Livrables de l'étape :</h4>
+                        <ul class="problem-list">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Alertes hebdomadaires sur les nouveaux appels d'offres qualifiés</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Rapport d'opportunité d'accès marché</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper animate-on-scroll delay-2">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
-                            <label for="name" class="form-label">Votre nom complet</label>
+                <!-- Etape 2 -->
+                <div class="problem-grid" style="margin-bottom: 8rem; align-items: center;">
+                    <div style="order: 2;">
+                        <div class="problem-visual">
+                            <div class="problem-stat" style="color: var(--accent);">02</div>
+                            <div class="problem-stat-desc" style="color: var(--accent);">ANALYSE STRATÉGIQUE (DCE)</div>
                         </div>
+                    </div>
+                    <div style="order: 1;">
+                        <span class="section-tag">Étape 02</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-left: 0;">Décryptage du DCE & Go / No-Go</h2>
+                        <p class="problem-text">
+                            Nous analysons en détail le Règlement de Consultation (RC), le Cahier des Clauses Techniques Particulières (CCTP) et le Cahier des Clauses Administratives Particulières (CCAP).
+                        </p>
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Livrables de l'étape :</h4>
+                        <ul class="problem-list">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Fiche d'évaluation de risques réglementaires et financiers</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Feuille de route d'appel d'offres (retroplanning de réponse)</li>
+                        </ul>
+                    </div>
+                </div>
 
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
-                            <label for="email" class="form-label">Adresse email professionnelle</label>
+                <!-- Etape 3 -->
+                <div class="problem-grid" style="margin-bottom: 8rem; align-items: center;">
+                    <div class="problem-visual">
+                        <div class="problem-stat">03</div>
+                        <div class="problem-stat-desc" style="color: var(--accent);">RÉDACTION SUR-MESURE</div>
+                    </div>
+                    <div>
+                        <span class="section-tag">Étape 03</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-left: 0;">Conception du mémoire technique & pièces administratives</h2>
+                        <p class="problem-text">
+                            Le mémoire technique est rédigé de A à Z par un consultant spécialiste de votre métier. Nous n'utilisons aucun copier-coller générique.
+                        </p>
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Livrables de l'étape :</h4>
+                        <ul class="problem-list">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Mémoire technique hautement personnalisé de 30 à 60 pages</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Dossier administratif complet qualifié et assemblé</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Etape 4 -->
+                <div class="problem-grid" style="align-items: center;">
+                    <div style="order: 2;">
+                        <div class="problem-visual">
+                            <div class="problem-stat" style="color: var(--accent);">04</div>
+                            <div class="problem-stat-desc" style="color: var(--accent);">DÉPÔT ET SIGNATURE</div>
                         </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" class="form-control" placeholder=" " required></textarea>
-                            <label for="message" class="form-label">Parlez-nous de vos besoins (secteur BTP, marchés publics...)</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
-                    </form>
+                    </div>
+                    <div style="order: 1;">
+                        <span class="section-tag">Étape 04</span>
+                        <h2 class="section-title" style="font-size: 2.2rem; text-align: left; margin-left: 0;">Soumission dématérialisée sécurisée</h2>
+                        <p class="problem-text">
+                            Un dépôt en retard ou mal transmis sur un profil acheteur (PLACE, AWS...) entraîne l'élimination automatique. Nous nous occupons de sécuriser votre soumission.
+                        </p>
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Livrables de l'étape :</h4>
+                        <ul class="problem-list">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Signature et chiffrement sécurisé des pièces d'offre</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent);"></i> Accusé de Réception (reçu de dépôt officiel) archivé</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- --- FOOTER --- -->
+        <!-- CTA Method -->
+        <section class="section section-light">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">Prêt à maximiser votre note technique ?</h2>
+                <a href="#contact" class="btn btn-primary">Lancer mon diagnostic gratuit <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 3. VIEW: SECTEURS                          -->
+    <!-- ========================================== -->
+    <div id="view-secteurs" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-briefcase"></i> Solutions Métiers</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Nos secteurs d'<span>expertise</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Chaque secteur possède sa propre réglementation et ses critères de notation. Nous structurons des réponses adaptées à votre métier.
+                </p>
+            </div>
+        </section>
+
+        <!-- Tab Buttons & details -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="sector-tabs">
+                    <button class="sector-tab-btn active" data-sector="btp"><i class="fa-solid fa-helmet-safety"></i> BTP & Travaux</button>
+                    <button class="sector-tab-btn" data-sector="securite"><i class="fa-solid fa-shield-halved"></i> Sécurité privée</button>
+                    <button class="sector-tab-btn" data-sector="nettoyage"><i class="fa-solid fa-broom"></i> Nettoyage professionnel</button>
+                    <button class="sector-tab-btn" data-sector="sur-mesure"><i class="fa-solid fa-sliders"></i> Accompagnement sur mesure</button>
+                </div>
+
+                <!-- BTP Tab Content -->
+                <div class="sector-detail-section active" id="btp">
+                    <div class="sector-detail-grid">
+                        <div class="sector-detail-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Chantier de construction BTP" class="sector-detail-img">
+                        </div>
+                        <div class="sector-detail-content">
+                            <span class="section-tag">Bâtiment & Travaux Publics</span>
+                            <h3>BTP & Travaux</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Les marchés de travaux exigent des réponses à forte valeur technique. La sécurité des équipes, la gestion des déchets (SOPAQ) et les méthodologies d'exécution pèsent lourd dans la note finale.
+                            </p>
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.8rem; color: var(--primary);">Notre valeur ajoutée :</h4>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                                Nous rédigeons des mémoires techniques BTP complets comprenant des plans d'organisation de chantier détaillés, des schémas de phasage, et des stratégies environnementales conformes.
+                            </p>
+                            <a href="#contact?offre=complet&secteur=btp" class="btn btn-primary">Lancer mon dossier BTP <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sécurité Tab Content -->
+                <div class="sector-detail-section" id="securite">
+                    <div class="sector-detail-grid">
+                        <div class="sector-detail-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80" alt="Agents de sécurité privée" class="sector-detail-img">
+                        </div>
+                        <div class="sector-detail-content">
+                            <span class="section-tag">Sécurité & Gardiennage</span>
+                            <h3>Sécurité Privée</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                En sécurité privée, les acheteurs publics redoutent le manque de réactivité opérationnelle et le non-respect des réglementations (agréments CNAPS). Votre dossier doit offrir des garanties absolues de continuité.
+                            </p>
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.8rem; color: var(--primary);">Notre valeur ajoutée :</h4>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                                Nous structurons vos mémoires autour de vos forces logistiques : outil de planification, processus de remplacement d'agent en moins de 2 heures, et agréments à jour.
+                            </p>
+                            <a href="#contact?offre=complet&secteur=securite" class="btn btn-primary">Lancer mon dossier Sécurité <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nettoyage Tab Content -->
+                <div class="sector-detail-section" id="nettoyage">
+                    <div class="sector-detail-grid">
+                        <div class="sector-detail-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Entretien ménager professionnel" class="sector-detail-img">
+                        </div>
+                        <div class="sector-detail-content">
+                            <span class="section-tag">Hygiène & Propreté</span>
+                            <h3>Nettoyage Professionnel</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Les critères environnementaux et sociaux sont devenus prioritaires dans l'attribution des marchés de nettoyage (Écolabel, travail en journée pour le bien-être social des agents).
+                            </p>
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.8rem; color: var(--primary);">Notre valeur ajoutée :</h4>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                                Nous rédigeons des mémoires techniques valorisant votre politique environnementale (dosages, fiches sécurité), votre gestion sociale, et votre rigueur méthodologique.
+                            </p>
+                            <a href="#contact?offre=complet&secteur=nettoyage" class="btn btn-primary">Lancer mon dossier Nettoyage <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sur-mesure Tab Content -->
+                <div class="sector-detail-section" id="sur-mesure">
+                    <div class="sector-detail-grid">
+                        <div class="sector-detail-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Consulting stratégique sur mesure" class="sector-detail-img">
+                        </div>
+                        <div class="sector-detail-content">
+                            <span class="section-tag">Autres services & Groupements</span>
+                            <h3>Accompagnement Sur-Mesure</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                                Vous êtes sur un autre secteur (espaces verts, transport, garderie, restauration collective) ou vous répondez en groupement d'entreprises (co-traitance) ? Notre cabinet s'adapte à vos besoins.
+                            </p>
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.8rem; color: var(--primary);">Notre valeur ajoutée :</h4>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                                Nous analysons le cadre juridique de votre dossier et rédigeons une méthodologie de coordination claire et rassurante pour l'acheteur, en harmonisant les compétences.
+                            </p>
+                            <a href="#contact?offre=complet&secteur=sur-mesure" class="btn btn-primary">Lancer mon projet sur mesure <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 4. VIEW: OFFRES & TARIFS                   -->
+    <!-- ========================================== -->
+    <div id="view-tarifs" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-tags"></i> Tarifs transparents</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Des offres claires, sans <span>surprise</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Que vous recherchiez un soutien ponctuel sur un dossier ou une externalisation complète de vos réponses, nous avons la formule adaptée.
+                </p>
+            </div>
+        </section>
+
+        <!-- Rates Cards & Matrix -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Essentiel -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Essentiel</h3>
+                        <p class="pricing-desc">Pour valider l'adéquation administrative et sécuriser votre accès.</p>
+                        <div class="pricing-price">890€<span>/ dossier</span></div>
+                        <div class="pricing-price-sub">Idéal pour démarrer</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Veille et sélection du marché</li>
+                            <li><i class="fa-solid fa-check"></i> Lecture DCE & Go / No-Go</li>
+                            <li><i class="fa-solid fa-check"></i> Dossier administratif complet (DC1, DC2, DUME)</li>
+                            <li><i class="fa-solid fa-check"></i> Validation des pièces obligatoires</li>
+                            <li style="color: var(--text-muted); text-decoration: line-through;"><i class="fa-solid fa-xmark" style="color: #EF4444;"></i> Rédaction du mémoire technique</li>
+                        </ul>
+                        <a href="#contact?offre=essentiel" class="btn btn-outline">Choisir l'offre Essentiel</a>
+                    </div>
+
+                    <!-- Complet -->
+                    <div class="pricing-card featured">
+                        <span class="pricing-badge">Le plus choisi</span>
+                        <h3 class="pricing-title">Complet</h3>
+                        <p class="pricing-desc">L'accompagnement haut de gamme pour maximiser votre note technique.</p>
+                        <div class="pricing-price">2490€<span>/ dossier</span></div>
+                        <div class="pricing-price-sub">Optimisation complète de la note</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Inclut l'offre <strong>Essentiel</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Rédaction du <strong>mémoire technique sur-mesure</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Optimisation RSE et critères d'attribution</li>
+                            <li><i class="fa-solid fa-check"></i> Dépôt technique sécurisé sur la plateforme</li>
+                        </ul>
+                        <a href="#contact?offre=complet" class="btn btn-primary">Choisir l'offre Complet</a>
+                    </div>
+
+                    <!-- Partenaire -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Partenaire Exclusif</h3>
+                        <p class="pricing-desc">Votre cabinet marchés publics externalisé avec garantie d'exclusivité.</p>
+                        <div class="pricing-price">1490€<span>/ mois</span></div>
+                        <div class="pricing-price-sub">Engagement de 6 mois minimum</div>
+                        <ul class="pricing-feature-list">
+                            <li><i class="fa-solid fa-check"></i> Veille permanente active multi-critères</li>
+                            <li><i class="fa-solid fa-check"></i> Réponses illimitées (selon planning)</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Exclusivité territoriale & métier</strong> contractuelle</li>
+                            <li><i class="fa-solid fa-check"></i> Réunions de suivi mensuelles</li>
+                        </ul>
+                        <a href="#contact?offre=partenaire-exclusif" class="btn btn-outline">Devenir Partenaire</a>
+                    </div>
+                </div>
+
+                <!-- Founder Highlight -->
+                <div class="founder-box">
+                    <div class="founder-box-grid">
+                        <div>
+                            <span class="founder-tag">Offre de lancement limitée</span>
+                            <h3>L'Offre Fondateur</h3>
+                            <p class="founder-desc">
+                                Nous réservons ce traitement d'exception aux 5 premières entreprises sélectionnées dans chaque région. Développez votre entreprise avec un budget d'externalisation réduit et fixe.
+                            </p>
+                        </div>
+                        <div class="founder-price-area">
+                            <div class="founder-price">990€<span>/ mois</span></div>
+                            <div class="founder-price-note">Tarif préférentiel garanti à vie</div>
+                            <a href="#contact?offre=fondateur" class="btn btn-primary">Postuler à l'offre Fondateur <i class="fa-solid fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 5. VIEW: A PROPOS                          -->
+    <!-- ========================================== -->
+    <div id="view-a-propos" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-graduation-cap"></i> Notre Histoire & Vision</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">L'humain au service de votre <span>croissance</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    ASMART Consulting rééquilibre le rapport de force en donnant aux TPE/PME les mêmes armes méthodologiques que les grands groupes pour remporter les marchés publics.
+                </p>
+            </div>
+        </section>
+
+        <!-- About bio & values -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="team-grid">
+                    <div class="team-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Asmae Azib - Fondatrice ASMART Consulting" class="team-img">
+                    </div>
+                    <div class="team-content">
+                        <span class="section-tag">La Fondatrice</span>
+                        <h3>Asmae Azib</h3>
+                        <div class="team-role">Fondatrice & Consultante Principale</div>
+                        <p class="team-bio">
+                            Après plusieurs années passées à piloter des réponses aux appels d'offres pour des acteurs majeurs du BTP et des services aux entreprises, Asmae Azib a constaté le fossé qui séparait les grands groupes des TPE/PME face à la commande publique.
+                        </p>
+                        <p class="team-bio">
+                            "Les petites et moyennes structures ont un savoir-faire technique exceptionnel sur le terrain. Mais elles échouent souvent sur les marchés publics par manque de temps ou de méthode dans la rédaction de leurs écrits. Mon rôle est de transformer ce savoir-faire technique en un document de vente percutant et irréprochable."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nos fondations</span>
+                    <h2 class="section-title">Les valeurs d'ASMART</h2>
+                </div>
+
+                <div class="stats-grid" style="margin-bottom: 0;">
+                    <div class="stat-item" style="text-align: left; background-color: var(--bg-white);">
+                        <div class="stat-num" style="font-size: 2.2rem; margin-bottom: 1rem;"><i class="fa-solid fa-microscope" style="color: var(--accent);"></i></div>
+                        <div class="stat-label" style="font-size: 1.15rem; margin-bottom: 0.5rem;">Rigueur absolue</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Chaque virgule, chaque document et chaque attestation compte. Nous appliquons un contrôle qualité de niveau supérieur pour éliminer tout risque d'exclusion administrative.
+                        </p>
+                    </div>
+                    <div class="stat-item" style="text-align: left; background-color: var(--bg-white);">
+                        <div class="stat-num" style="font-size: 2.2rem; margin-bottom: 1rem;"><i class="fa-solid fa-route" style="color: var(--accent);"></i></div>
+                        <div class="stat-label" style="font-size: 1.15rem; margin-bottom: 0.5rem;">Pragmatisme</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Nos méthodes et nos mémoires techniques sont immédiatement opérationnels pour votre activité et alignés sur les réalités du terrain.
+                        </p>
+                    </div>
+                    <div class="stat-item" style="text-align: left; background-color: var(--bg-white);">
+                        <div class="stat-num" style="font-size: 2.2rem; margin-bottom: 1rem;"><i class="fa-solid fa-handshake" style="color: var(--accent);"></i></div>
+                        <div class="stat-label" style="font-size: 1.15rem; margin-bottom: 0.5rem;">Fidélité & Exclusivité</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            La confiance est notre actif principal. En limitant nos dossiers par secteur et par zone géographique, nous protégeons vos intérêts commerciaux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 6. VIEW: FAQ                               -->
+    <!-- ========================================== -->
+    <div id="view-faq" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-circle-question"></i> Centre de Support</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Foire aux <span>questions</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Des questions sur la réponse aux appels d'offres ? Notre équipe décrypte pour vous la complexité administrative et commerciale de la commande publique.
+                </p>
+            </div>
+        </section>
+
+        <!-- Accordions -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="faq-search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass faq-search-icon"></i>
+                    <input type="text" id="faq-search" class="faq-search-input" placeholder="Filtrer une question (ex: RSE, mémoire, DUME...)">
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Qu'est-ce que le DUME et à quoi sert-il ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Le DUME (Document Unique de Marché Européen) est une déclaration sur l'honneur harmonisée au niveau européen. Il remplace les anciens formulaires DC1 et DC2. Il sert de preuve préliminaire que votre entreprise remplit les conditions de conformité sans avoir à fournir immédiatement toutes vos attestations (URSSAF, impôts, etc.).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quelles sont les causes d'élimination les plus fréquentes ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Il existe trois causes majeures d'élimination automatique : le dépôt hors-délai (même d'une seconde), l'absence d'une pièce administrative obligatoire, et une offre jugée irrégulière ou non conforme. Notre travail consiste à éradiquer ces trois risques.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Pourquoi externaliser la réponse plutôt que d'embaucher en interne ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Embaucher un consultant marchés publics qualifié en interne représente un coût fixe élevé. En faisant appel à ASMART, vous bénéficiez d'une expertise premium à la demande, uniquement lorsque vous en avez besoin, tout en profitant d'une garantie contractuelle d'exclusivité.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quelle est la différence entre critères administratifs et critères d'attribution ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Les critères administratifs (candidature) servent à vérifier si vous avez le droit de soumissionner (assurances, régularité fiscale, chiffre d'affaires). C'est un filtre binaire. Les critères d'attribution (offre) servent à classer les candidats pour choisir le vainqueur (note technique du mémoire, prix, RSE).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Comment rédigez-vous notre mémoire technique ? Utilisez-vous des modèles ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Aucun modèle générique ou pré-rempli n'est utilisé. Nous interrogeons vos équipes techniques pour comprendre votre organisation réelle, vos moyens humains et matériels. Ensuite, nous rédigeons un mémoire sur-mesure pour chaque appel d'offres en répondant aux critères du Règlement de la Consultation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Combien de temps à l'avance devons-nous vous contacter ?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Dans l'idéal, contactez-nous dès la détection de l'opportunité commerciale, soit au moins 10 à 15 jours avant la date limite de remise des offres. Cela nous laisse le temps d'analyser le dossier, de mener des ateliers de cadrage et de soigner la rédaction.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 7. VIEW: CONTACT                           -->
+    <!-- ========================================== -->
+    <div id="view-contact" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-envelope-open-text"></i> Entrer en relation</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Construisons votre <span>succès</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Un projet de réponse sur un appel d'offres en cours ? Une question sur nos tarifs d'exclusivité ? Nos conseillers répondent sous 24 heures.
+                </p>
+            </div>
+        </section>
+
+        <!-- Form and scheduler -->
+        <section class="section section-white">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Info Panel & Callback Scheduler -->
+                    <div class="contact-info-panel">
+                        <div class="contact-card">
+                            <h3>Coordonnées directes</h3>
+                            <div class="contact-methods">
+                                <div class="contact-method-item">
+                                    <div class="contact-method-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="contact-method-text">
+                                        <h4>Téléphone direct</h4>
+                                        <p><a href="tel:+33600000000">+33 (0)6 00 00 00 00</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-method-item">
+                                    <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="contact-method-text">
+                                        <h4>Email principal</h4>
+                                        <p><a href="mailto:contact@asmart-consulting.fr">contact@asmart-consulting.fr</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-method-item">
+                                    <div class="contact-method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="contact-method-text">
+                                        <h4>Zone de couverture</h4>
+                                        <p>Paris & Île-de-France (Interventions France entière)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scheduler-box">
+                            <h3>Créneau de rappel téléphonique</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                                Sélectionnez un créneau horaire indicatif pour notre premier échange (optionnel) :
+                            </p>
+                            <div class="time-slots">
+                                <button type="button" class="time-slot-btn" data-time="09h30 - 10h00">09:30 - 10:00</button>
+                                <button type="button" class="time-slot-btn" data-time="11h00 - 11h30">11:00 - 11:30</button>
+                                <button type="button" class="time-slot-btn" data-time="14h00 - 14h30">14:00 - 14:30</button>
+                                <button type="button" class="time-slot-btn" data-time="15h30 - 16h00">15:30 - 16:00</button>
+                                <button type="button" class="time-slot-btn" data-time="17h00 - 17h30">17:00 - 17:30</button>
+                                <button type="button" class="time-slot-btn" data-time="18h00 - 18h30">18:00 - 18:30</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <div class="contact-form-container">
+                        <h3 class="form-title">Nous contacter</h3>
+                        <p class="form-subtitle">Décrivez votre besoin et nos experts marchés publics vous répondront sous 24h.</p>
+
+                        <form id="contact-form">
+                            <!-- Honeypot -->
+                            <div class="hp-field">
+                                <label for="honeypot">Ne rien saisir ici</label>
+                                <input type="text" id="honeypot" name="honeypot">
+                            </div>
+                            
+                            <!-- Callback timeslot value -->
+                            <input type="hidden" id="selected-timeslot" name="selected-timeslot">
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nom complet *</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Jean Dupont" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Entreprise *</label>
+                                    <input type="text" id="company" name="company" class="form-control" placeholder="Entreprise SAS" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Téléphone *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="06 12 34 56 78" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email professionnel *</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="nom@entreprise.fr" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="metier" class="form-label">Votre secteur métier *</label>
+                                    <select id="metier" name="metier" class="form-control" required>
+                                        <option value="" disabled selected>Choisir un secteur</option>
+                                        <option value="btp">BTP & Travaux</option>
+                                        <option value="securite">Sécurité privée</option>
+                                        <option value="nettoyage">Nettoyage professionnel</option>
+                                        <option value="sur-mesure">Accompagnement sur mesure</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zone" class="form-label">Zone géographique cible *</label>
+                                    <input type="text" id="zone" name="zone" class="form-control" placeholder="Ex: Île-de-France, Lyon..." required>
+                                </div>
+                                <div class="form-group-full form-group">
+                                    <label for="message" class="form-label">Votre message ou appel d'offres ciblé</label>
+                                    <textarea id="message" name="message" class="form-control" placeholder="Détaillez vos questions ou spécifiez la date limite de votre appel d'offres..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Anti-spam challenge -->
+                            <div class="captcha-box" style="margin-top: 2rem;">
+                                <span class="captcha-label">Validation humaine :</span>
+                                <span class="captcha-question" id="captcha-question">5 + 2 =</span>
+                                <input type="number" id="captcha-answer" name="captcha-answer" class="captcha-input" required>
+                            </div>
+
+                            <div class="form-checkbox-group">
+                                <input type="checkbox" id="rgpd" name="rgpd" class="form-checkbox" required>
+                                <label for="rgpd" class="form-checkbox-label">
+                                    J'accepte que mes informations soient utilisées afin d'être recontacté dans le cadre de ma demande. Consulter notre <a href="#politique-confidentialite">Politique de confidentialité</a>.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer ma demande <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 8. VIEW: BLOG                              -->
+    <!-- ========================================== -->
+    <div id="view-blog" class="page-view">
+        <!-- Sub Header -->
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-book-open"></i> Décryptages réglementaires</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Blog & <span>ressources</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Conseils méthodologiques, actualités et guides rédigés par nos experts pour tout comprendre de la commande publique.
+                </p>
+            </div>
+        </section>
+
+        <!-- Grid -->
+        <section class="section section-white">
+            <div class="container">
+                <div style="text-align: right; margin-bottom: 3rem;">
+                    <a href="#blog-admin" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.6rem 1.2rem; border-radius: var(--radius-sm);">
+                        <i class="fa-solid fa-lock"></i> Accès Éditeur (CMS)
+                    </a>
+                </div>
+                <div class="blog-grid" id="blog-posts-container">
+                    <p style="grid-column: span 3; text-align: center; color: var(--text-muted);">Chargement des articles...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 9. VIEW: ARTICLE (SINGLE POST READ)        -->
+    <!-- ========================================== -->
+    <div id="view-article" class="page-view">
+        <section class="article-header">
+            <div class="container">
+                <span class="hero-tag" id="article-category">Catégorie</span>
+                <h1 class="article-header-title" id="article-title">Chargement...</h1>
+                <div class="article-header-meta" id="article-meta" style="margin-top: 1.5rem;"></div>
+            </div>
+        </section>
+
+        <main class="article-main section-white">
+            <div class="container">
+                <div class="article-layout">
+                    <div>
+                        <img src="" alt="Article cover" id="article-cover-img" style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 3rem; border: 1px solid var(--border-color);">
+                        <div class="article-content" id="single-article-content"></div>
+                        <div style="margin-top: 4rem; border-top: 1px solid rgba(10,22,40,0.1); padding-top: 2rem;">
+                            <a href="#blog" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Retourner au blog</a>
+                        </div>
+                    </div>
+
+                    <aside class="article-sidebar">
+                        <h3 class="article-sidebar-title">Autres articles</h3>
+                        <div id="related-articles"></div>
+                        <div style="background-color: var(--primary); color: var(--text-light); padding: 2rem; border-radius: var(--radius-sm); border: 1px solid var(--accent); margin-top: 3rem; text-align: center;">
+                            <h4 style="color: var(--accent); font-size: 1.15rem; margin-bottom: 1rem; font-weight: 700;">Diagnostic gratuit</h4>
+                            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 1.5rem;">
+                                Vous souhaitez optimiser votre mémoire technique pour un appel d'offres imminent ?
+                            </p>
+                            <a href="#contact" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.6rem 1.2rem; width: 100%; display: block; box-shadow: none;">Postuler maintenant</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 10. VIEW: BLOG-ADMIN (CMS PORTAL)          -->
+    <!-- ========================================== -->
+    <div id="view-blog-admin" class="page-view">
+        <section class="hero" style="height: auto; min-height: 45dvh; padding: 11rem 0 5rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <span class="hero-tag"><i class="fa-solid fa-user-gear"></i> Espace Éditeur CMS</span>
+                <h1 class="hero-title" style="margin-top: 1rem;">Gestionnaire de <span>contenus</span></h1>
+                <p class="hero-description" style="margin: 0 auto; max-width: 800px;">
+                    Interface d'administration locale d'ASMART. Créez ou modifiez des articles stockés en local dans votre navigateur.
+                </p>
+            </div>
+        </section>
+
+        <main class="admin-container section-white">
+            <div class="container">
+                <div class="admin-grid">
+                    <!-- Left: List -->
+                    <div class="admin-list-box">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; color: var(--primary);">
+                            Articles publiés
+                        </h3>
+                        <ul class="admin-articles-list" id="admin-posts-list"></ul>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-container" style="padding: 3rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;" id="form-action-title">Rédiger un article</h3>
+                        <form id="admin-post-form">
+                            <input type="hidden" id="edit-post-id">
+                            <div class="form-group" style="margin-bottom: 1.2rem;">
+                                <label for="post-title" class="form-label">Titre de l'article *</label>
+                                <input type="text" id="post-title" name="post-title" class="form-control" placeholder="ex: Optimiser son mémoire technique..." required>
+                            </div>
+                            <div class="form-grid" style="margin-bottom: 1.2rem; gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label for="post-category" class="form-label">Secteur / Thématique *</label>
+                                    <select id="post-category" name="post-category" class="form-control" required>
+                                        <option value="btp">BTP & Travaux</option>
+                                        <option value="securite">Sécurité</option>
+                                        <option value="nettoyage">Nettoyage</option>
+                                        <option value="divers">Conseils généraux</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="post-readtime" class="form-label">Temps de lecture estimé</label>
+                                    <input type="text" id="post-readtime" name="post-readtime" class="form-control" placeholder="ex: 5 min">
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.2rem;">
+                                <label for="post-image" class="form-label">URL de l'image de couverture</label>
+                                <input type="url" id="post-image" name="post-image" class="form-control" placeholder="Lien Unsplash...">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.2rem;">
+                                <label for="post-excerpt" class="form-label">Résumé court (extrait) *</label>
+                                <input type="text" id="post-excerpt" name="post-excerpt" class="form-control" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.8rem;">
+                                <label for="post-content" class="form-label">Corps de l'article *</label>
+                                <textarea id="post-content" name="post-content" class="form-control" style="min-height: 250px;" required></textarea>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <button type="reset" class="btn btn-outline" style="flex: 1;">Réinitialiser</button>
+                                <button type="submit" class="btn btn-primary" id="admin-submit-btn" style="flex: 2;">Créer l'article <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 11. VIEW: MENTIONS LEGALES                 -->
+    <!-- ========================================== -->
+    <div id="view-mentions-legales" class="page-view">
+        <section class="hero" style="height: auto; min-height: 35dvh; padding: 10rem 0 3rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <h1 class="hero-title" style="margin-top: 1rem;">Mentions <span>légales</span></h1>
+            </div>
+        </section>
+        <main class="section-white" style="padding: 5rem 0;">
+            <div class="container" style="max-width: 800px; font-size: 1rem; line-height: 1.7;">
+                <p style="margin-bottom: 2rem;">Conformément à la loi pour la confiance dans l'économie numérique, voici les mentions légales du site.</p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Éditeur du site :</h3>
+                <p>
+                    <strong>ASMART Consulting & Formation</strong>, SAS au capital de 5 000 euros.
+                    <br>Siège social : Paris, France.
+                    <br>RCS Paris : 123 456 789.
+                    <br>Directrice de la publication : Asmae Azib.
+                </p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Hébergeur :</h3>
+                <p>
+                    <strong>o2Switch</strong>, Chemin des Pardiaux, 63000 Clermont-Ferrand, France.
+                </p>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 12. VIEW: POLITIQUE DE CONFIDENTIALITE     -->
+    <!-- ========================================== -->
+    <div id="view-politique-confidentialite" class="page-view">
+        <section class="hero" style="height: auto; min-height: 35dvh; padding: 10rem 0 3rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <h1 class="hero-title" style="margin-top: 1rem;">Politique de <span>confidentialité</span></h1>
+            </div>
+        </section>
+        <main class="section-white" style="padding: 5rem 0;">
+            <div class="container" style="max-width: 800px; font-size: 1rem; line-height: 1.7;">
+                <p style="margin-bottom: 2rem;">Respect du RGPD et protection de vos données de contact.</p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Collecte des données :</h3>
+                <p>Nous collectons votre nom, entreprise, téléphone, e-mail et secteur d'activité uniquement pour étudier votre projet et vous proposer nos services. Aucune revente à des tiers.</p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Vos Droits :</h3>
+                <p>Droit d'accès, rectification ou suppression par simple e-mail à : contact@asmart-consulting.fr.</p>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- 13. VIEW: CGV                              -->
+    <!-- ========================================== -->
+    <div id="view-cgv" class="page-view">
+        <section class="hero" style="height: auto; min-height: 35dvh; padding: 10rem 0 3rem 0;">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; display: block;">
+                <h1 class="hero-title" style="margin-top: 1rem;">Conditions Générales de <span>Vente</span></h1>
+            </div>
+        </section>
+        <main class="section-white" style="padding: 5rem 0;">
+            <div class="container" style="max-width: 800px; font-size: 1rem; line-height: 1.7;">
+                <p style="margin-bottom: 2rem;">Règlement des honoraires et obligations contractuelles.</p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Paiement :</h3>
+                <p>Les tarifs s'entendent Hors Taxes (HT). Règlement exigible à la commande pour les formules par dossier, ou par mensualités de début de mois pour les abonnements.</p>
+                <h3 style="font-size: 1.3rem; margin-top: 2rem; color: var(--primary);">Obligations :</h3>
+                <p>ASMART Consulting est soumis à une obligation de moyens de haute qualité. Le choix final d'attribution appartient uniquement à l'acheteur public.</p>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- --- SHARED FOOTER --- -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#hero" class="logo">
-                        <img src="logo.png" alt="ASMART Logo" class="logo-img-footer">
-                    </a>
+                    <span class="logo-text" style="font-size: 1.8rem;">ASMART<span>.</span></span>
                     <p class="footer-description">
-                        L'accompagnement sur-mesure pour les TPE & PME souhaitant conquérir de nouveaux marchés publics et sécuriser leur croissance dans le BTP.
+                        Cabinet français expert de la commande publique. Nous accompagnons les TPE/PME du BTP, de la sécurité et du nettoyage dans l'optimisation et la soumission de leurs réponses aux marchés publics.
                     </p>
                     <div class="footer-status">
                         <span class="status-dot"></span>
@@ -331,19 +1335,23 @@
                 </div>
 
                 <div>
-                    <h3 class="footer-title">Navigation</h3>
+                    <h3 class="footer-title">Plan de navigation</h3>
                     <ul class="footer-links">
-                        <li><a href="#hero">Accueil</a></li>
-                        <li><a href="#about">Qui Sommes-Nous</a></li>
-                        <li><a href="#services">Nos Services</a></li>
-                        <li><a href="#why-us">Pourquoi Nous Choisir</a></li>
-                        <li><a href="#contact">Prendre Contact</a></li>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#methode">Notre méthode</a></li>
+                        <li><a href="#secteurs">Secteurs & Expertises</a></li>
+                        <li><a href="#tarifs">Offres & Tarifs</a></li>
+                        <li><a href="#a-propos">À propos de nous</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#blog">Ressources & Blog</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="footer-title">Suivez-nous</h3>
-                    <p style="margin-bottom: 20px; font-size: 0.95rem;">Retrouvez nos conseils, veilles et actualités réglementaires sur nos réseaux sociaux.</p>
+                    <h3 class="footer-title">Liaisons professionnelles</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: rgba(248,246,241,0.6);">
+                        Rejoignez-nous sur les réseaux pour suivre l'actualité de la commande publique et de la réglementation.
+                    </p>
                     <div class="footer-socials">
                         <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -353,19 +1361,32 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 ASMART Consulting & Formation. Tous droits réservés.</p>
+                <p>&copy; 2026 ASMART Consulting. Tous droits réservés.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Mentions Légales</a>
-                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#mentions-legales">Mentions Légales</a>
+                    <a href="#politique-confidentialite">Politique de Confidentialité</a>
+                    <a href="#cgv">Conditions Générales de Vente (CGV)</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Success Toast Notification -->
+    <!-- Toast Success Notification -->
     <div class="toast" id="success-toast">
         <i class="fa-solid fa-circle-check"></i>
-        <span>Votre message a été envoyé avec succès ! Nous vous recontacterons très rapidement.</span>
+        <span>Analyse demandée avec succès ! Notre équipe étudie votre dossier et vous contacte sous 24h.</span>
+    </div>
+
+    <!-- Cookies Consent Banner -->
+    <div class="cookie-banner" id="cookie-banner">
+        <h4 class="cookie-title">Respect de votre vie privée</h4>
+        <p class="cookie-text">
+            Notre site utilise des cookies de mesure d'audience et de performance pour vous offrir une expérience de navigation premium. Pour en savoir plus, consultez notre <a href="#politique-confidentialite">Politique de confidentialité</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button class="btn btn-outline" id="cookie-deny">Refuser</button>
+            <button class="btn btn-primary" id="cookie-accept">Accepter tout</button>
+        </div>
     </div>
 
     <!-- --- JAVASCRIPT --- -->
