@@ -1034,6 +1034,16 @@ a {
     margin-bottom: 6rem;
 }
 
+.stats-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .stat-item {
     text-align: center;
     background-color: var(--bg-light);
@@ -2171,7 +2181,7 @@ textarea.form-control {
     .sectors-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
     .blog-grid { grid-template-columns: 1fr; }
-    .stats-grid { grid-template-columns: 1fr; }
+    .stats-grid, .stats-grid-2 { grid-template-columns: 1fr; }
     .examples-grid { grid-template-columns: 1fr; }
     
     .form-grid {
