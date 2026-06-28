@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (viewId === '#article') {
             renderSingleArticle(params.id);
         } else if (viewId === '#blog-admin') {
-            renderAdminList();
+            checkAdminAuth();
         } else if (viewId === '#secteurs') {
             const tab = params.tab || 'btp';
             activateSectorTab(tab);
@@ -253,7 +253,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const honeypot = document.getElementById('honeypot').value;
             if (honeypot) {
                 console.warn('Spam détection : HoneyPot rempli.');
-                return; // Silently reject
+                // Return silent success to not alert the bot
+                const successToast = document.getElementById('success-toast');
+                if (successToast) {
+                    successToast.classList.add('show');
+                    setTimeout(() => {
+                        successToast.classList.remove('show');
+                    }, 5000);
+                }
+                contactForm.reset();
+                slotBtns.forEach(b => b.classList.remove('selected'));
+                if (selectedSlotInput) selectedSlotInput.value = '';
+                generateCaptcha();
+                setTimeout(() => {
+                    window.location.hash = '#accueil';
+                }, 1500);
+                return;
             }
 
             // Spam prevention 2: Captcha check
@@ -264,25 +279,71 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // If passed, simulate success
-            const successToast = document.getElementById('success-toast');
-            if (successToast) {
-                successToast.classList.add('show');
-                setTimeout(() => {
-                    successToast.classList.remove('show');
-                }, 5000);
-            }
+            // Get submit button to show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Envoi en cours... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-            // Reset form
-            contactForm.reset();
-            slotBtns.forEach(b => b.classList.remove('selected'));
-            if (selectedSlotInput) selectedSlotInput.value = '';
-            generateCaptcha();
-            
-            // Redirect to home after successful submit
-            setTimeout(() => {
-                window.location.hash = '#accueil';
-            }, 1500);
+            // Gather form data
+            const formData = {
+                name: document.getElementById('name').value,
+                company: document.getElementById('company').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                metier: document.getElementById('metier').value,
+                zone: document.getElementById('zone').value,
+                message: document.getElementById('message').value,
+                'selected-timeslot': selectedSlotInput ? selectedSlotInput.value : '',
+                honeypot: honeypot
+            };
+
+            // Call serverless api route
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(errData => {
+                        throw new Error(errData.error || 'Erreur lors de l\'envoi du message.');
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                // If passed, show success toast
+                const successToast = document.getElementById('success-toast');
+                if (successToast) {
+                    successToast.classList.add('show');
+                    setTimeout(() => {
+                        successToast.classList.remove('show');
+                    }, 5000);
+                }
+
+                // Reset form
+                contactForm.reset();
+                slotBtns.forEach(b => b.classList.remove('selected'));
+                if (selectedSlotInput) selectedSlotInput.value = '';
+                generateCaptcha();
+                
+                // Redirect to home after successful submit
+                setTimeout(() => {
+                    window.location.hash = '#accueil';
+                }, 1500);
+            })
+            .catch(error => {
+                console.error('Error sending form:', error);
+                alert(`Une erreur est survenue lors de l'envoi du formulaire : ${error.message}\n\nVeuillez réessayer.`);
+            })
+            .finally(() => {
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
         });
     }
 
@@ -452,6 +513,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const adminForm = document.getElementById('admin-post-form');
     const adminList = document.getElementById('admin-posts-list');
     const editPostIdInput = document.getElementById('edit-post-id');
+
+    // Admin Auth State & Protection
+    let isAdminAuthenticated = sessionStorage.getItem('asmart_admin_auth') === 'true';
+    const adminAuthPanel = document.getElementById('admin-auth-panel');
+    const adminCmsContent = document.getElementById('admin-cms-content');
+    const adminAuthForm = document.getElementById('admin-auth-form');
+    const adminPasswordInput = document.getElementById('admin-password');
+    const adminAuthError = document.getElementById('admin-auth-error');
+
+    function checkAdminAuth() {
+        if (!adminAuthPanel || !adminCmsContent) return;
+
+        if (isAdminAuthenticated) {
+            adminAuthPanel.style.display = 'none';
+            adminCmsContent.style.display = 'block';
+            renderAdminList();
+        } else {
+            adminAuthPanel.style.display = 'block';
+            adminCmsContent.style.display = 'none';
+        }
+    }
+
+    if (adminAuthForm) {
+        adminAuthForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const password = adminPasswordInput.value;
+            const CORRECT_PASSWORD = 'asmart-admin-2026'; // Simple dissuasive password
+
+            if (password === CORRECT_PASSWORD) {
+                isAdminAuthenticated = true;
+                sessionStorage.setItem('asmart_admin_auth', 'true');
+                if (adminAuthError) adminAuthError.style.display = 'none';
+                adminPasswordInput.value = '';
+                checkAdminAuth();
+            } else {
+                if (adminAuthError) adminAuthError.style.display = 'block';
+                adminPasswordInput.value = '';
+            }
+        });
+    }
 
     if (adminForm) {
         adminForm.addEventListener('submit', (e) => {
